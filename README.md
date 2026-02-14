@@ -72,10 +72,10 @@ This project provides a digital platform where users can check parking slot avai
 *Login page where user enters name and role.*
 
 ![Screenshot2](screenshots/2.png)
-*Parking slots page showing vacant and occupied slots.*
+*select vehicle type.*
 
 ![Screenshot3](screenshots/3.png)
-*Success page after confirming parking slot.*
+*showing vaccant slots.*
 
 ---
 
