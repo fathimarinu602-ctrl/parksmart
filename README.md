@@ -74,7 +74,7 @@ This project provides a digital platform where users can check parking slot avai
 ![Screenshot2](screenshots/2.png)
 *Parking slots page showing vacant and occupied slots.*
 
-![Screenshot3](screenshots/success.png)
+![Screenshot3](screenshots/3.png)
 *Success page after confirming parking slot.*
 
 ---
