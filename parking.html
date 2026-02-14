@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart College Parking</title>
+    <link rel="stylesheet" href="smart.css">
+</head>
+<body>
+    <script> src="smart.js"></script>
+
+<header>
+    <h1>Parksmart</h1>
+</header>
+
+<!-- LOGIN PAGE -->
+<div class="login-box" id="loginPage">
+    <h2>Login</h2>
+    <input type="text" id="name" placeholder="Enter Your Name"><br>
+
+    <select id="role">
+        <option value="">Select Role</option>
+        <option value="Student">Student</option>
+        <option value="Teacher">Teacher</option>
+    </select><br><br>
+
+    <button onclick="login()">Login</button>
+    <p id="loginMsg"></p>
+</div>
+
+<!-- VEHICLE SELECTION -->
+<div class="select-box" id="selectBox" style="display:none;">
+    <h2>Select Vehicle Type</h2>
+    <button onclick="selectType('bike')">🏍️ Bike</button>
+    <button onclick="selectType('car')">🚗 Car</button>
+</div>
+
+<!-- PARKING PAGE -->
+<div id="parkingPage" style="display:none;">
+
+    <section class="slot-section">
+        <h2 id="vehicleTitle"></h2>
+        <div class="slots" id="slotArea"></div>
+    </section>
+
+    <section class="status-section">
+        <div class="card vacant-card">
+            <h3>🟢 Vacant Slots</h3>
+            <ul id="vacantList"></ul>
+        </div>
+
+        <div class="card occupied-card">
+            <h3>🔴 Occupied Slots</h3>
+            <ul id="occupiedList"></ul>
+        </div>
+    </section>
+</div>
+
+<!-- CONFIRM PAGE -->
+<div id="confirmPage" style="display:none;" class="confirm-box">
+    <h2>Confirm Slot</h2>
+    <p id="confirmText"></p>
+    <button onclick="confirmSlot()">✅ Confirm</button>
+    <button onclick="cancelConfirm()">❌ Cancel</button>
+</div>
+
+<!-- SUCCESS PAGE -->
+<div id="successPage" style="display:none;" class="success-box">
+    <h2>🎉 Slot Confirmed Successfully!</h2>
+    <p id="successText"></p>
+
+    <button onclick="goToVehicleSelect()">Select Another Vehicle</button>
+    <button onclick="logout()">Logout</button>
+</div>
+
+<footer>
+    <p>© 2026 Smart Parking Project</p>
+</footer>
+
+<script src="smart.js"></script>
+</body>
+</html>

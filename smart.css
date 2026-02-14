@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: 'italic', Arial, sans-serif;
+  background: linear-gradient(135deg, rgba(80, 85, 85, 0.945), #838789e3);
+  text-align: center;
+}
+
+/* HEADER */
+header {
+  background: rgba(8, 6, 7, 0.7);
+  color: rgb(216, 207, 213);
+  padding: 15px;
+  font-style: italic;
+  font-size: 22px;
+}
+
+/* COMMON BOX STYLE */
+.login-box, .select-box, .confirm-box, .success-box, #parkingPage {
+  background: rgba(107, 119, 119, 0.955);
+  width: 340px;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* INPUTS */
+input, select {
+  width: 90%;
+  padding: 12px;
+  margin: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* BUTTONS */
+button {
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  margin: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.08);
+  background: linear-gradient(135deg, #27ae60, #2ecc71);
+}
+
+/* SLOT AREA */
+.slots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* SLOT DESIGN */
+.slot {
+  width: 95px;
+  height: 75px;
+  margin: 10px;
+  border-radius: 15px;
+  font-weight: bold;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.slot:hover {
+  transform: scale(1.1);
+}
+
+/* FREE SLOT */
+.free {
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: white;
+}
+
+/* OCCUPIED SLOT */
+.occupied {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: white;
+}
+
+/* STATUS CARDS */
+.status-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.card {
+  background: white;
+  margin: 10px;
+  padding: 15px;
+  width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+footer {
+  background: rgba(0,0,0,0.7);
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+  .login-box, .select-box, .confirm-box, .success-box, #parkingPage {
+    width: 90%;
+  }
+
+  .slots {
+    flex-direction: column;
+  }
+}
