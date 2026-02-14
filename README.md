@@ -83,8 +83,8 @@ This project provides a digital platform where users can check parking slot avai
 
 ### Video
 
-🎥 **[Add your demo video link here]**
-*The video demonstrates login, slot selection, cancellation, and confirmation flow.*
+🎥 **[[Add your demo video link here](https://drive.google.com/file/d/1s8mgIHoyEjBeUCPCn0Zd-YOgJWFImXva/view?usp=sharing)]**
+
 
 ---
 
